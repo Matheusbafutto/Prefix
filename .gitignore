@@ -30,7 +30,7 @@ int main()
     while (m < j) {  
         temp = t_str[m];
         t_str[m].resize(i);
-        if (t_str[m] == prefix){
+        if (t_str[m] != prefix){
            k++;
         }
         t_str[m] = temp;
@@ -46,7 +46,7 @@ int main()
     while (m < j) {
         temp = t_str[m];
         t_str[m].resize(i);
-        if (t_str[m] == prefix){
+        if (t_str[m] != prefix){
             result[k] = temp;
             k++;
         }
@@ -63,7 +63,7 @@ int main()
             m++;
         }
     } else{
-        cout << "No element with the selected";
+        cout << "All elements with the selected";
         cout << " prefix" << endl;
     }
     
